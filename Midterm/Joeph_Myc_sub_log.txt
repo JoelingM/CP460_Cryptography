@@ -1,0 +1,627 @@
+Cryptanalysis of ciphertext_Joseph_Myc_q3.txt:
+Ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;j
+
+Debug Mode: Enter Command: replace ; with
+Description: most common punctuation should be space
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - - - - - - - - - - - - - - - - - - - - - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+------ --- ---- -- -- ---- -- ------ --------- --- --- ---- --- -------------- --- -------- ------ -- ------ -------------- ---- ---- --- ------ -- --- ---------- -------- ----------------- ---- --- --- --- ---- -------- ----- --- -------- ---------------- ---- ------------ ---- --- --------- --- -------- ---------- --- ----- ------ -- ---- -- --- ---------------- --- - ---- -- ----- ------- ----
+
+_______________________________________
+
+Enter Command: replace h with e
+Description: most common char in ciphertext is h
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - h - - - - - - - - - - - - - - - - - - - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+----e- --- ---- -- -e ---e -- -----e -------e- --- --- ---e --- -----------e-- --e -----e-- ----e- -- ---e-- ----e--------e ---- ---- --e ---e-- -- -e- ---------- -----e-- ----------------- ---- --e --- --- -ee- ----e--- ----e --e -e----e- ------e-e------- ---- ------------ ---- -e- -e------- --- --e----- ---e----e- -e- ----- -e--e- -- ---- -- --e -----e---------- --- - ---- -e ----e ------- ----
+
+_______________________________________
+
+Enter Command: replace j with h
+Description: most common 3 letter string is ujh -> the
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - h - - j - - - - - - - - - - - - - - - - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+----e- --- ---- -- -e ---e -- -----e -------e- --- -h- ---e --- -----------e-- -he -----e-- ---he- -- h--e-- ----e--------e ---- ---h -he ---e-- -- he- -h---h---- -----e-- --------h-------- -h-- -he h-- --- -ee- ----e--- ----e -he -e----e- ------e-e------- ---- ---h-------- ---h he- -e------- --- --e----- ---e----e- he- -h--- -e--e- -- -h-- -- -he -----e---------h --- - ---- -e ----e ------- ----
+
+_______________________________________
+
+Enter Command: replace u with t
+Description: complete word "the"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - h - - j - - - - - - - - - - - u - - - - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+---te- --- t--- t- -e ---e t- ----te t------e- --- -h- ---e -t- ------t---te-- the ----te-- ---he- t- h--e-- t--te----t--te t--- --th the ---e-- -- he- -h---h---- -----e-- --------h-------- -h-- -he h-- --t -ee- ----e--- ----e -he -et---e- ------ete------- ---- ---h-------- --th he- te------- --t --e----t ---e----e- he- -h--- -e--e- t- th-t -- the ----te--------th --- - ---- -e ---te ------- ----
+
+_______________________________________
+
+Enter Command: replace a with o
+Description: complete word "to"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - h - - j - - - - - - a - - - - u - - - - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- --- to-- to -e ---e to ----te to-----e- --- -ho ---e -to -o----t---te-- the -o--te-- ---he- to h--e-- t--te----t--te t--- --th the ---e-- o- he- -h---hoo-- -----e-- --------h---o---- -ho- -he h-- -ot -ee- --o-e--- ----e -he -et---e- --o---ete------- ---- ---h---o---- --th he- te----o-- --t --e----t ---e----e- he- -h--- -e--e- to th-t o- the -o--te--------th -o- - ---- -e ---te ------- ----
+
+_______________________________________
+
+Enter Command: replace b with w
+Description: complete word "who"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :- - - - h - - j - - - - - - a - - - - u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- w-- to-- to -e ---e to ----te to-----e- --- who ---e -to -o----t---te-- the -o--te-- w--he- to h--e-- t--te----t--te t--- w-th the ---e-- o- he- -h---hoo-- -----e-- --------h---o---- who- -he h-- -ot -ee- --o-e--- ----e -he -et---e- --o---ete------- ---- ---h---o---- w-th he- te---wo-- --t --e----t ---e----ew he- -h--- -e--e- to th-t o- the -o--te------w-th -o- - w--- -e ---te ------- ----
+
+_______________________________________
+
+Enter Command: replace d with a
+Description: create word "was"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - - h - - j - - - - - - a - - - - u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- wa- to-- to -e ---e to ----te to-----e- a-- who -a-e -to -o---at--ate-- the -o--te-- w--he- to ha-e-a t--te----t--te ta-- w-th the ---e-- o- he- -h---hoo-- -----e-- a--a----ha--o--a- who- -he ha- -ot -ee- --o-e--- ----e -he -et---e- --o---ete------- a--a ---ha--o--a- w-th he- tea--wo-- --t --ea-a-t -a-e----ew he- -ha-- -ea-e- to that o- the -o--te------w-th -o- - w--- -e ---te --a---- -a--
+
+_______________________________________
+
+Enter Command: replace s with s
+Description: create word "was"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - - h - - j - - - - - - a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was to-- to -e s--e to ----te to-----e- a-- who -a-e -to -o---at--ate-- the -o--tess w-she- to ha-e-a t--te----t--te ta-- w-th the ---e-- o- he- -h---hoo-- -----ess a--a----ha--o--a- who- she ha- -ot see- --o-e--- s---e she -et---e- --o---ete-s----- a--a ---ha--o--a- w-th he- tea--wo-- --t --easa-t -a-e----ew he- -ha-- -ea-e- to that o- the -o--tess----w-th -o- - w--- -e ---te --a---- sa--
+
+_______________________________________
+
+Enter Command: replace c with n
+Description: complete "not" and "seen"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - - h - - j - - - - - c a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was to-- to -e s--e to -n--te to---nne- a-- who -a-e -to -on--at--ate-- the -o-ntess w-she- to ha-e-a t--te----t--te ta-- w-th the ---en- o- he- -h---hoo-- ---n-ess anna----ha--o-na- who- she ha- not seen --o-e--- s-n-e she -et--ne- --o---ete-s----- anna ---ha--o-na- w-th he- tea--wo-n --t --easant -a-e----ew he- -ha-- nea-e- to that o- the -o-ntess----w-th -o- - w--- -e ---te --an--- sa--
+
+_______________________________________
+
+Enter Command: replace z with i
+Description: create "with"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - - h - - j z - - - - c a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was to-- to -e s--e to in-ite to--inne- a-- who -a-e -to -on--at--ate-- the -o-ntess wishe- to ha-e-a t--te----t--te ta-- with the --ien- o- he- -hi--hoo-- --in-ess anna--i-ha--o-na- who- she ha- not seen --o-e--- sin-e she -et--ne- --o---ete-s----- anna -i-ha--o-na- with he- tea--wo-n --t --easant -a-e----ew he- -hai- nea-e- to that o- the -o-ntess----with -o- i wi-- -e --ite --an--- sai-
+
+_______________________________________
+
+Enter Command: replace y with l
+Description: create "told"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - - h - - j z - - y - c a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was tol- to -e s--e to in-ite to--inne- all who -a-e -to -on--at-late-- the -o-ntess wishe- to ha-e-a t--te----t--te tal- with the --ien- o- he- -hil-hoo-- --in-ess anna--i-ha-lo-na- who- she ha- not seen --o-e-l- sin-e she -et--ne- --o---ete-s----- anna -i-ha-lo-na- with he- tea--wo-n --t -leasant -a-e----ew he- -hai- nea-e- to that o- the -o-ntess----with -o- i will -e --ite --an--- sai-
+
+_______________________________________
+
+Enter Command: replace q with d
+Description: create "told"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d - - q h - - j z - - y - c a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was told to -e s--e to in-ite to-dinne- all who -a-e -to -on--at-late-- the -o-ntess wished to ha-e-a t--te----t--te tal- with the --iend o- he- -hildhood- --in-ess anna--i-ha-lo-na- who- she had not seen --o-e-l- sin-e she -et--ned --o---ete-s----- anna -i-ha-lo-na- with he- tea--wo-n --t -leasant -a-e--d-ew he- -hai- nea-e- to that o- the -o-ntess----with -o- i will -e --ite --an--- said
+
+_______________________________________
+
+Enter Command: replace n with b
+Description: create "be"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n - q h - - j z - - y - c a - - - s u - - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was told to be s--e to in-ite to-dinne- all who -a-e -to -on--at-late-- the -o-ntess wished to ha-e-a t--te----t--te tal- with the --iend o- he- -hildhood- --in-ess anna--i-ha-lo-na- who- she had not seen --o-e-l- sin-e she -et--ned --o---ete-sb---- anna -i-ha-lo-na- with he- tea--wo-n b-t -leasant -a-e--d-ew he- -hai- nea-e- to that o- the -o-ntess----with -o- i will be --ite --an--- said
+
+_______________________________________
+
+Enter Command: replace f with u
+Description: create "sure"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n - q h - - j z - - y - c a - - - s u f - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-o-te- was told to be su-e to in-ite to-dinne- all who -a-e -to -on--atulate-- the -ountess wished to ha-e-a t--te----t--te tal- with the --iend o- he- -hildhood- --in-ess anna--i-ha-lo-na- who- she had not seen --o-e-l- sin-e she -etu-ned --o---ete-sbu--- anna -i-ha-lo-na- with he- tea--wo-n but -leasant -a-e--d-ew he- -hai- nea-e- to that o- the -ountess----with -ou i will be -uite --an--- said
+
+_______________________________________
+
+Enter Command: replace r with r
+Description: create "sure"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n - q h - - j z - - y - c a - - r s u f - b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-orter was told to be sure to in-ite to-dinner all who -a-e -to -on-ratulate-- the -ountess wished to ha-e-a t--te----t--te tal- with the -riend o- her -hildhood- -rin-ess anna--i-ha-lo-na- who- she had not seen -ro-erl- sin-e she returned -ro---etersbur-- anna -i-ha-lo-na- with her tear-worn but -leasant -a-e--drew her -hair nearer to that o- the -ountess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace m with v
+Description: create "invite"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n - q h - - j z - - y - c a - - r s u f m b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-orter was told to be sure to invite to-dinner all who -a-e -to -on-ratulate-- the -ountess wished to have-a t--te----t--te tal- with the -riend o- her -hildhood- -rin-ess anna--i-ha-lovna- who- she had not seen -ro-erl- sin-e she returned -ro---etersbur-- anna -i-ha-lovna- with her tear-worn but -leasant -a-e--drew her -hair nearer to that o- the -ountess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace x with c
+Description: create "came" and "congratulate"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h - - j z - - y - c a - - r s u f m b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-orter was told to be sure to invite to-dinner all who ca-e -to con-ratulate-- the countess wished to have-a t--te----t--te tal- with the -riend o- her childhood- -rincess anna--i-ha-lovna- who- she had not seen -ro-erl- since she returned -ro---etersbur-- anna -i-ha-lovna- with her tear-worn but -leasant -ace--drew her chair nearer to that o- the countess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace v with m
+Description: create "came"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h - - j z - - y v c a - - r s u f m b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-orter was told to be sure to invite to-dinner all who came -to con-ratulate-- the countess wished to have-a t--te----t--te tal- with the -riend o- her childhood- -rincess anna-mi-ha-lovna- whom she had not seen -ro-erl- since she returned -rom--etersbur-- anna mi-ha-lovna- with her tear-worn but -leasant -ace--drew her chair nearer to that o- the countess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace e with g
+Description: create "congratulate"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h - e j z - - y v c a - - r s u f m b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+-orter was told to be sure to invite to-dinner all who came -to congratulate-- the countess wished to have-a t--te----t--te tal- with the -riend o- her childhood- -rincess anna-mi-ha-lovna- whom she had not seen -ro-erl- since she returned -rom--etersburg- anna mi-ha-lovna- with her tear-worn but -leasant -ace--drew her chair nearer to that o- the countess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace i with p
+Description: create "pleasant"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h - e j z - - y v c a i - r s u f m b - - - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate-- the countess wished to have-a t--te----t--te tal- with the -riend o- her childhood- princess anna-mi-ha-lovna- whom she had not seen properl- since she returned -rom-petersburg- anna mi-ha-lovna- with her tear-worn but pleasant -ace--drew her chair nearer to that o- the countess----with -ou i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace l with y
+Description: create "properly"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h - e j z - - y v c a i - r s u f m b - l - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate-- the countess wished to have-a t--te----t--te tal- with the -riend o- her childhood- princess anna-mi-haylovna- whom she had not seen properly since she returned -rom-petersburg- anna mi-haylovna- with her tear-worn but pleasant -ace--drew her chair nearer to that o- the countess----with you i will be -uite -ran--- said
+
+_______________________________________
+
+Enter Command: replace k with f
+Description: create "freind" and "of"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - - y v c a i - r s u f m b - l - - - - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate-- the countess wished to have-a t--te----t--te tal- with the friend of her childhood- princess anna-mi-haylovna- whom she had not seen properly since she returned from-petersburg- anna mi-haylovna- with her tear-worn but pleasant face--drew her chair nearer to that of the countess----with you i will be -uite fran--- said
+
+_______________________________________
+
+Enter Command: replace   with ,
+Description: fits context of sentences
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - - y v c a i - r s u f m b - l - -   - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate-- the countess wished to have-a t--te----t--te tal- with the friend of her childhood, princess anna-mi-haylovna, whom she had not seen properly since she returned from-petersburg- anna mi-haylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess----with you i will be -uite fran-,- said
+
+_______________________________________
+
+Enter Command: replace , with .
+Description: fits sentence pattern
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - - y v c a i - r s u f m b - l - ,   - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate.- the countess wished to have-a t--te----t--te tal- with the friend of her childhood, princess anna-mi-haylovna, whom she had not seen properly since she returned from-petersburg. anna mi-haylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.---with you i will be -uite fran-,- said
+
+_______________________________________
+
+Enter Command: replace w with q
+Description: create "quite"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - - y v c a i w r s u f m b - l - ,   - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate.- the countess wished to have-a t--te----t--te tal- with the friend of her childhood, princess anna-mi-haylovna, whom she had not seen properly since she returned from-petersburg. anna mi-haylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.---with you i will be quite fran-,- said
+
+_______________________________________
+
+Enter Command: replace p with k
+Description: create "frank"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - p y v c a i w r s u f m b - l - ,   - ; - - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came -to congratulate.- the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.---with you i will be quite frank,- said
+
+_______________________________________
+
+Enter Command: replace ? with #
+Description: fits context for newline
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z - p y v c a i w r s u f m b - l - ,   - ; ? - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace g with j
+Description: fill unknown character
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b - l - ,   - ; ? - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace o with x
+Description: fill unknown character
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l - ,   - ; ? - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace t with z
+Description: fill unknown character
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   - ; ? - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace : with ;
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? - - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace ! with "
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? ! - - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace ' with ?
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? ! ' - - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace " with '
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? ! ' " - - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace # with !
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? ! ' " # - -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+Enter Command: replace . with :
+Description: fill unknown punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : -
+Sub :d n x q h k e j z g p y v c a i w r s u f m b o l t ,   : ; ? ! ' " # . -
+
+ciphertext:
+iaruhr;bds;uayq;ua;nh;sfrh;ua;zcmzuh;ua-qzcchr;dyy;bja;xdvh;?ua;xacerdufyduh,?;Ujh;xafcuhss;bzsjhq;ua;jdmh-d;uÃªuh
+Ã 
+uÃªuh;udyp;bzuj;ujh;krzhcq;ak;jhr;xjzyqjaaq ;Irzcxhss;Dccd-Vzpjdlyamcd ;bjav;sjh;jdq;cau;shhc;iraihryl;szcxh;sjh;rhufrchq;krav-Ihuhrsnfre,;Dccd;Vzpjdlyamcd ;bzuj;jhr;uhdr
+barc;nfu;iyhdsdcu;kdxh -qrhb;jhr;xjdzr;chdrhr;ua;ujdu;ak;ujh;xafcuhss,--?Bzuj;laf;Z;bzyy;nh;wfzuh;krdcp ?;sdzq;
+plaintext :
+porter was told to be sure to invite to-dinner all who came
+to congratulate.
+ the countess wished to have-a t--te----t--te talk with the friend of her childhood, princess anna-mikhaylovna, whom she had not seen properly since she returned from-petersburg. anna mikhaylovna, with her tear-worn but pleasant face,-drew her chair nearer to that of the countess.--
+with you i will be quite frank,
+ said
+
+_______________________________________
+
+
+_______________________________________
+
+Enter Command: end
+Description: Fininshed :).
